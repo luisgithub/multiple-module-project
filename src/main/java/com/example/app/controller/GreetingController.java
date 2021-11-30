@@ -1,6 +1,6 @@
-package org.example.controller;
+package com.example.app.controller;
 
-import org.example.service.GreetingService;
+import com.example.app.service.GreetingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
