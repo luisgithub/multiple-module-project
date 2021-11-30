@@ -1,32 +1,26 @@
 plugins {
     id 'java'
-    id 'org.springframework.boot' version '2.4.4'
-    id 'io.spring.dependency-management' version '1.0.10.RELEASE'
+    id 'org.springframework.boot'
+    id 'io.spring.dependency-management'
+//    id 'io.spring.dependency-management' version '1.0.10.RELEASE'
 }
 
 group 'org.example'
 version '1.0-SNAPSHOT'
 
+
 repositories {
     mavenCentral()
 }
 
-
 dependencies {
-
-    implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    implementation module('multiple-module-project.main')
+//    implementation project(':multiple-module-project')
 }
 
-//allprojects {
-//    apply plugin: 'java'
-//    apply plugin: 'org.springframework.boot'
-//    dependencies {
-//
-//    }
-//}
 
 test {
     useJUnitPlatform()

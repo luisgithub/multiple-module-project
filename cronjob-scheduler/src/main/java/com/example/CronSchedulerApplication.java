@@ -1,17 +1,13 @@
-package org.example;
+package com.example;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MultipleModuleProjectApplication {
+public class CronSchedulerApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(MultipleModuleProjectApplication.class, args);
-
-System.out.println("ddddddd");
+        SpringApplication.run(CronSchedulerApplication.class, args);
     }
-
-
 
 }

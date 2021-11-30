@@ -1,2 +1,3 @@
 rootProject.name = 'multiple-module-project'
+include 'cronjob-scheduler'
 
